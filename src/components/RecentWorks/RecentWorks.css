@@ -1,0 +1,264 @@
+/* ===========================
+   RECENT WORKS SECTION
+=========================== */
+
+.rw-section {
+  background: #ffffff;
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.rw-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 32px;
+  position: relative;
+  z-index: 1;
+}
+
+/* ===========================
+   TOP ROW
+=========================== */
+
+.rw-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 16px;
+ 
+}
+
+.rw-top-left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rw-logo {
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  margin-bottom: 4px;
+}
+
+.rw-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 80px;
+  margin-top: -40px;
+}
+
+.rw-number,
+.rw-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #5B61FF;
+}
+
+.rw-title {
+  font-size: 42px;
+  font-weight: 800;
+  color: #15152e;
+  letter-spacing: -1px;
+   margin-left: 80px;
+}
+
+.rw-arrow-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: none;
+  background: #5B61FF;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background 0.3s;
+  margin-top: 8px;
+   margin-right: 120px;
+}
+
+.rw-arrow-btn:hover {
+  background: #4348dd;
+}
+
+.rw-desc {
+  font-size: 18px;
+  color: #6b6b8a;
+  line-height: 1.7;
+  max-width: 480px;
+  margin-bottom: 56px;
+   margin-left: 80px;
+}
+
+/* ===========================
+   WORKS GRID
+=========================== */
+
+.rw-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.rw-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.rw-card-image {
+  position: relative;
+  border-radius: 44px;
+  aspect-ratio: 1.15;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: 80px;
+}
+
+.rw-bg-orange {
+  background: #f8c98a;
+  width: 350px;
+  height: 550px;
+  margin-left: 100px;
+  margin-top: 10px;
+} 
+
+.rw-bg-blue {
+  background: #b8dcf5;
+  width: 350px;
+  height: 550px;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+.rw-badge {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: #8e94f7;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 20px;
+  z-index: 2;
+}
+
+.rw-card-img {
+  width: 1100px;
+  height : 500px;
+  display: block;
+  position: relative;
+  z-index: 1;
+
+}
+
+.rw-card-arrow {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.6);
+  background: rgba(255,255,255,0.3);
+  backdrop-filter: blur(4px);
+  color: #15152e;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: background 0.3s;
+}   
+
+.rw-card-arrow:hover {
+  background: rgba(255,255,255,0.6);
+} 
+
+.rw-card-title {
+  font-size: 28px;
+  font-weight: 800;
+  color: #15152e;
+  margin-left: 90px;
+}
+
+.rw-card-desc {
+  font-size: 20px;
+  color: #8a8aa8;
+  line-height: 1.6;
+  margin-left: 90px;
+
+}
+
+/* ===========================
+   TABLET ≤ 1024px
+=========================== */
+
+@media (max-width: 1024px) {
+
+  .rw-title {
+    font-size: 32px;
+  }
+
+  .rw-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+}
+
+/* ===========================
+   MOBILE ≤ 768px
+=========================== */
+
+@media (max-width: 768px) {
+
+  .rw-section {
+    padding: 56px 0;
+  }
+
+  .rw-top {
+    flex-direction: column;
+    gap: 16px;
+    margin-left: -50px;
+  }
+
+  .rw-title {
+    font-size: 28px;
+  }
+
+  .rw-desc {
+    margin-left: 30px;
+    max-width: 100%;
+  }
+  .rw-card-image {
+    margin-left: 0;     
+    width: 55%;
+  }
+
+  .rw-card-title{
+    margin-left: 0;
+  }
+  .rw-card-desc{
+    margin-left: 0;
+  }
+  .rw-logo{
+    display: none;
+  }
+
+  .rw-arrow-btn {
+    display: none;
+
+  }
+
+}
