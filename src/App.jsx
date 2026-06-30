@@ -4,7 +4,7 @@ import MainLayout from "./layouts/MainLayout/MainLayout";
 
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
-import CaseStudy from "./pages/CaseStudy/CaseStudyHero";
+import CaseStudy from "./pages/CaseStudy/CaseStudy";
 import Services from "./components/Services/Services";   
 import Jobs from "./pages/Jobs/Jobs";  
 
