@@ -1,0 +1,597 @@
+/* ===========================
+   ABOUT — WHO WE ARE
+=========================== */
+
+.about {
+  background: #0d0d1f;
+  padding: 70px 0 100px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 0;
+}
+
+/* ===========================
+   DECORATIVE ELEMENTS
+=========================== */
+
+/* Top-right angled shape image */
+.about-shape-bg {
+  position: absolute;
+  top: 0;
+  right: 17%;
+  width: 680px;
+  height: auto;
+  z-index: 0;
+  pointer-events: none;
+  display: block;
+}
+
+/* Bottom-right large circle behind "28" */
+/* .about-blob-br {
+  position: absolute;
+  bottom: 45px;
+  right: 230px;
+  width: 320px;
+  height: 320px;
+  background: #151530;
+  border-radius: 50%;
+  z-index: 0;
+} */
+
+/* Top-left decorative circles */
+.about-line {
+  position: absolute;
+  left:-50px;
+  right:400px;
+  top: -350px;
+  bottom: 100px;
+  width: 460px;
+  height: 880px;
+  z-index: -1;
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.ac {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid #1e1e40;
+  display: block;
+}
+
+.ac-1 {
+  width: 60px;
+  height: 60px;
+  left: 30px;
+  top: 30px;
+}
+
+.ac-2 {
+  width: 110px;
+  height: 110px;
+  left: 5px;
+  top: 5px;
+}
+
+.ac-3 {
+  width: 170px;
+  height: 170px;
+  left: -25px;
+  top: -25px;
+}
+
+/* ===========================
+   INNER WRAPPER
+=========================== */
+
+.about-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: relative;
+  z-index: 1;
+}
+
+/* ===========================
+   ROW 1 — logo + tag + arrows
+=========================== */
+
+.about-row1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-tag-center {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: -750px; 
+
+}
+.about-logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 7px;
+  display: block;
+  flex-shrink: 0;
+}
+
+.about-tag-number {
+  color: #5a5a8a;
+  font-size: 13px;
+  font-weight: 600;
+  margin-left: 280px;
+}
+
+.about-tag-label {
+  color: #f2f2f7;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.about-arrows {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.arrow-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, color 0.3s;
+}
+
+.arrow-prev {
+  background:ece9f7;
+  color: white;
+  border: 1px solid #2a2a50;
+  margin-right: -100px;
+}
+
+.arrow-prev:hover {
+  background: ece9f7;
+  color: #fff;
+}
+
+.arrow-next {
+  background: #5B61FF;
+  color: #fff;
+  margin-right: 150px;
+}
+
+.arrow-next:hover {
+  background: #4348dd;
+}
+
+/* ===========================
+   ROW 2 — title
+=========================== */
+
+.about-row2 {
+  margin-bottom: 44px;
+  padding-left: 200px; 
+}
+.about-title {
+  font-size: 44px;
+  line-height: 56px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -1px;
+}
+
+/* ===========================
+   ROW 3 — timeline + image
+=========================== */
+
+.about-row3 {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  align-items: stretch;
+  margin-bottom: 64px;
+  position: relative;
+}
+
+/* ── Vertical Timeline ── */
+.about-timeline {
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.tl-track {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  position: relative;
+  width: 70px;
+  height: 100%;             
+  min-height: 200px;        
+}
+
+/* Vertical connecting line */
+/* .tl-track::before {
+  content: "";
+  position: absolute;
+  left: -12px;
+  top: 12px;
+  bottom: 12px;
+  width: 1px;
+  background: #1e1e40;
+} */
+
+.tl-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 40px 0;
+  position: relative;
+}
+
+.tl-year {
+  font-size: 13px;
+  color: #bababd;
+  font-weight: 500;
+}
+
+.tl-item.active .tl-year {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+/* White dot on the vertical line at active year */
+.tl-dot {
+  position: absolute;
+  left: -17px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid #0d0d1f;
+  box-shadow: 0 0 0 1px #fff;
+}
+
+/* Dash before 2020 */
+.tl-item.active::before {
+  content: "—";
+  position: absolute;
+  left: -120px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1;
+}
+
+/* Horizontal line going right from active year */
+.tl-h-line {
+  position: absolute;
+  left: 40px;      /* 👈 smaller number = closer to "2020" text */
+  bottom: 28.5%;
+  width: 200px;     /* 👈 bigger number = longer line */
+  height: 1px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.tl-h-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #fff;
+  flex-shrink: 0;
+  margin-right: -4px;
+}
+
+/* ── Image Card ── */
+.about-image-card {
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  padding: 0;
+}
+
+.about-image-card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* ===========================
+   ROW 4 — desc + stat
+=========================== */
+
+.about-row4 {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 40px;
+  padding-left: 200px;
+  position: relative;
+  z-index: 1;
+}
+
+.about-desc {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.about-desc-accent {
+  width: 3px;
+  min-height: 130px;
+  background: #c0405a;
+  border-radius: 2px;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.about-desc-content {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.about-desc-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 30px;
+}
+
+.about-desc-text {
+  font-size: 13px;
+  color: #5a5a8a;
+  line-height: 22px;
+  max-width: 340px;
+}
+
+.about-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 24px;
+  height: 44px;
+  border: 1.5px solid #5B61FF;
+  border-radius: 10px;
+  background: transparent;
+  color: #5B61FF;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  width: fit-content;
+  margin-top: 4px;
+}
+
+.about-btn:hover {
+  background: #5B61FF;
+  color: #fff;
+}
+
+/* Stat */
+.about-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.about-stat-number {
+  font-size: 120px;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1;
+  letter-spacing: -5px;
+  margin-left: -350px;
+}
+
+.about-stat-label {
+  font-size: 18px;
+  color: #eeeef9;
+  font-weight: 500;
+  margin-top: 4px;
+  text-align: center;
+  margin-left: -350px;
+}
+
+/* ===========================
+   TABLET ≤ 1024px
+=========================== */
+
+@media (max-width: 1024px) {
+
+  .about-inner {
+    padding: 0 24px;
+  }
+
+  .about-title {
+    font-size: 34px;
+    line-height: 44px;
+  }
+
+  .about-row3 {
+    grid-template-columns: 80px 1fr;
+  }
+
+  .about-row4 {
+    padding-left: 80px;
+  }
+
+  .about-stat-number {
+    font-size: 80px;
+  }
+
+  .about-shape-bg {
+    width: 260px;
+  }
+
+  .about-blob-br {
+    width: 220px;
+    height: 220px;
+  }
+
+}
+
+/* ===========================
+   MOBILE ≤ 768px
+=========================== */
+
+@media (max-width: 768px) {
+
+  .about {
+    padding: 50px 0 20px;
+  }
+
+  .about-inner {
+    padding: 0 20px;
+  }
+
+.about-tag-center,
+.about-tag-number {
+  display: flex;
+  visibility: visible;
+  opacity: 1;
+  position: static;     /* in case any inherited absolute positioning is pushing them off-screen */
+  margin-left: 20px;
+  color: #f2f2f7;        /* ensure text color isn't accidentally matching the dark background */
+}
+
+.about-tag-label {
+  display: flex;
+  visibility: visible;
+  opacity: 1;
+  position: static;     /* in case any inherited absolute positioning is pushing them off-screen */
+  margin-left: 10px;
+  color: #f2f2f7;
+ white-space: nowrap;         /* ensure text color isn't accidentally matching the dark background */
+}
+
+  .about-title {
+    font-size: 36px;
+    bottom: 10px;
+    line-height: 40px;
+    margin-left: -160px;
+    margin-top: 30px;
+  }
+
+  .about-arrows {
+    position: absolute;
+    top: 0;           /* 👈 pushes it just below row1's own height */
+    left: -95px;
+    margin-top: 250px;
+  }
+
+  .about-logo {
+    display: none;
+  }
+
+  .about-row3 {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+
+  .about-timeline {
+    flex-direction: row;
+    align-self: auto;
+  }
+
+  .tl-track {
+    display: none !important;
+  }
+
+  .about-mobile-year {
+    display: flex !important;
+    align-items: center;
+    gap: 28px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: -26px;
+  }
+
+  .about-image-card {
+  width: 100%;
+  max-width: 100%;
+  min-height: 360px;  
+ 
+}
+
+.about-image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: -100px;
+}
+
+  .tl-track::before {
+    display: none;
+  }
+
+  .tl-item.active::before {
+    display: none;
+  }
+
+  .tl-dot {
+    display: none;
+  }
+
+  .tl-h-line {
+    display: none;
+  }
+
+  .about-row4 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;    /* keeps desc/button left-aligned */
+    gap: 32px;
+    padding-left: 0;
+     margin-top: 30px;
+  }
+
+  .about-stat {
+    align-items: flex-start;     /* left-align instead of centered */
+    margin-top: 0;
+     margin-top: 70px;
+  }
+
+  .about-stat-number {
+    font-size: 78px;
+    margin-left: 150px;
+    margin-bottom: 20px;
+  }
+
+  .about-stat-label {
+    margin-left: 120px;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+
+
+  .about-shape-bg,
+  .about-blob-br,
+  .about-circles {
+    display: none;
+  }
+
+}

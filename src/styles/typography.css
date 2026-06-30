@@ -1,0 +1,141 @@
+/* ===================================
+   DISPLAY
+=================================== */
+
+.display-1{
+    font-family:"Inter",sans-serif;
+    font-size:110px;
+    font-weight:700;
+    line-height:100%;
+    letter-spacing:-1.2px;
+}
+
+.display-2{
+    font-family:"Inter",sans-serif;
+    font-size:84px;
+    font-weight:700;
+    line-height:100%;
+    letter-spacing:-1px;
+}
+
+/* ===================================
+   HEADINGS
+=================================== */
+
+.heading-1{
+    font-family:"Inter",sans-serif;
+    font-size:76px;
+    font-weight:700;
+    line-height:92px;
+    letter-spacing:-0.5px;
+}
+
+.heading-2{
+    font-family:"Inter",sans-serif;
+    font-size:64px;
+    font-weight:700;
+    line-height:72px;
+    letter-spacing:-0.5px;
+}
+
+.heading-3{
+    font-family:"Inter",sans-serif;
+    font-size:48px;
+    font-weight:700;
+    line-height:56px;
+    letter-spacing:-0.5px;
+}
+
+.heading-4{
+    font-family:"Inter",sans-serif;
+    font-size:40px;
+    font-weight:700;
+    line-height:48px;
+    letter-spacing:-0.3px;
+}
+
+.heading-5{
+    font-family:"Inter",sans-serif;
+    font-size:32px;
+    font-weight:700;
+    line-height:40px;
+    letter-spacing:-0.5px;
+}
+
+.heading-6{
+    font-family:"Inter",sans-serif;
+    font-size:24px;
+    font-weight:700;
+    line-height:32px;
+    letter-spacing:-0.2px;
+}
+
+/* ===================================
+   TITLE
+=================================== */
+
+.title{
+    font-family:"Inter",sans-serif;
+    font-size:20px;
+    font-weight:700;
+    line-height:28px;
+    letter-spacing:-0.18px;
+}
+
+/* ===================================
+   BODY
+=================================== */
+
+.body-1{
+    font-family:"Inter",sans-serif;
+    font-size:18px;
+    font-weight:400;
+    line-height:32px;
+}
+
+.body-2{
+    font-family:"Inter",sans-serif;
+    font-size:16px;
+    font-weight:400;
+    line-height:28px;
+}
+
+/* ===================================
+   BUTTON
+=================================== */
+
+.button-text{
+    font-family:"Inter",sans-serif;
+    font-size:18px;
+    font-weight:700;
+    line-height:24px;
+}
+
+/* ===================================
+   MENU
+=================================== */
+
+.menu-item{
+    font-family:"Inter",sans-serif;
+    font-size:18px;
+    font-weight:600;
+    line-height:24px;
+}
+
+/* ===================================
+   CAPTION
+=================================== */
+
+.caption-1{
+    font-family:"Inter",sans-serif;
+    font-size:14px;
+    font-weight:600;
+    line-height:18px;
+}
+
+.caption-2{
+    font-family:"Inter",sans-serif;
+    font-size:12px;
+    font-weight:600;
+    line-height:16px;
+}

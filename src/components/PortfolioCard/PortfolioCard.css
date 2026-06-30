@@ -1,0 +1,19 @@
+.portfolio-card {
+  position: relative;
+  width: 100%;
+}
+
+.portfolio-card-img {
+  width: 100%;
+  display: block;
+}
+
+.portfolio-card-featured .portfolio-card-img {
+  border-radius: 20px;
+  margin-left: -80px;
+  top: -50px;
+}
+
+.portfolio-card-bento .portfolio-card-img {
+  border-radius: 20px;
+}

@@ -1,0 +1,283 @@
+/* ===========================
+   VISUAL IDENTITY SECTION
+=========================== */
+
+.vi-section {
+  background: #f7f7fb;
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;   /* ← ADD THIS */
+  z-index: 2; 
+}
+
+.vi-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 32px;
+  position: relative;
+  z-index: 1;
+  margin-top: 20px;
+}
+
+/* ===========================
+   CONTENT ROW
+=========================== */
+
+.vi-content-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 80px;
+  margin-top: -20px;
+}
+
+/* ===========================
+   LEFT COLUMN
+=========================== */
+
+.vi-left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.vi-logo {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 8px;
+  display: inline-flex;
+}
+.vi-line {
+  position: absolute;
+  left: 120px;
+  top: -100px;
+  width: 560px;
+  height: 620px;
+  z-index: -1;
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.vi-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 100px;
+  margin-top: -40px;
+}
+
+.vi-number,
+.vi-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #5B61FF;
+}
+
+.vi-title {
+  font-size: 52px;
+  font-weight: 800;
+  color: #15152e;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  margin-left: 100px;
+}
+
+.vi-desc {
+  font-size: 14px;
+  color: #6b6b8a;
+  line-height: 1.7;
+  max-width: 360px;
+  margin-bottom: 18px;
+  margin-left: 100px;
+}
+
+.vi-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.vi-stat-value {
+  font-size: 72px;
+  font-weight: 800;
+  color: #5B61FF;
+  line-height: 1;
+  margin-left: 100px;
+}
+
+.vi-plus {
+  font-size: 32px;
+  vertical-align: top;
+}
+
+.vi-stat-label-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 70px;
+}
+
+.vi-stat-line {
+  width: 20px;
+  height: 1px;
+  background: #c4c4d8;
+}
+
+.vi-stat-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #15152e;
+}
+
+/* ===========================
+   RIGHT COLUMN: CARD
+=========================== */
+
+.vi-right {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.vi-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 106px;
+  width: 100%;
+  max-width: 480px;
+  height: 500px;
+  box-shadow: 0 20px 60px rgba(91, 97, 255, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.vi-feature {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.vi-feature-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.vi-icon-dot {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.vi-icon-pink {
+  background: #f7c9de;
+}
+
+.vi-icon-purple {
+  background: #8e94f7;
+}
+
+.vi-icon-orange {
+  background: #f8d49a;
+}
+
+.vi-feature-text {
+  font-size: 17px;
+  font-weight: 600;
+  color: #15152e;
+  line-height: 1.5;
+}
+
+.vi-cta {
+  background: #5B61FF;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 14px 24px;
+  border-radius: 10px;
+  margin-top: 4px;
+  transition: background 0.3s;
+}
+
+.vi-cta:hover {
+  background: #4348dd;
+}
+
+/* ===========================
+   TABLET ≤ 1024px
+=========================== */
+
+@media (max-width: 1024px) {
+
+  .vi-content-row {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .vi-logo{
+    display: none;
+  }
+
+  .vi-title {
+    font-size: 32px;
+  }
+
+  .vi-stat-value {
+    font-size: 56px;
+    
+  }
+
+  .vi-right {
+    justify-content: flex-start;
+  }
+
+}
+
+/* ===========================
+   MOBILE ≤ 768px
+=========================== */
+
+@media (max-width: 768px) {
+
+    .vi-right {
+    justify-content: flex-start;   /* ← ADD THIS */
+  }
+
+  .vi-section {
+    padding: 56px 0;
+    margin-top: 40px;
+  }
+
+  .vi-eyebrow {
+    margin-left: 20px;
+  }
+  .vi-title {
+    font-size: 28px;
+    margin-left: 20px;
+  }
+ .vi-desc{
+    margin-left: 20px;
+ }
+
+ .vi-stat-value {
+    font-size: 56px;
+    margin-left: 20px;
+    
+  }
+  .vi-stat-label{
+     margin-left: -80px;
+  }
+  .vi-card {
+    max-width: 100%;
+    padding: 52px;
+  }
+
+}

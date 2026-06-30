@@ -1,0 +1,48 @@
+/* ===================================
+   DESCRIPTION STYLES
+=================================== */
+
+.button{
+    font-family:"Inter",sans-serif;
+    font-size:14px;
+    font-weight:600;
+    line-height:18px;
+}
+
+.caption{
+    font-family:"Inter",sans-serif;
+    font-size:14px;
+    font-weight:600;
+    line-height:18px;
+}
+
+.caption-small{
+    font-family:"Inter",sans-serif;
+    font-size:12px;
+    font-weight:600;
+    line-height:16px;
+}
+
+.menu-tagline{
+    font-family:"Inter",sans-serif;
+    font-size:14px;
+    font-weight:600;
+    line-height:18px;
+}
+
+.d1,
+.d2,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.title-description,
+.body,
+.body-small{
+    font-family:"Inter",sans-serif;
+    font-size:14px;
+    font-weight:600;
+    line-height:18px;
+}

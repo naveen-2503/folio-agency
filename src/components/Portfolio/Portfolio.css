@@ -1,0 +1,289 @@
+/* ===========================
+   PORTFOLIO / PARTNERSHIPS
+=========================== */
+
+.portfolio {
+  background: #ffffff;
+  padding: 80px 0 120px;
+  position: relative;
+  overflow: hidden;
+  max-width: 100vw;
+}
+
+.portfolio-line-1 {
+  position: absolute;
+  top: 1580px;       /* 👈 vertical position — near "Bento 3D Illustration" */
+  left: 580px;
+  width: 780px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.portfolio-line-2 {
+  position: absolute;
+  top: 820px;       /* 👈 vertical position — near "Bento Vol. 3" */
+  right: 900px;
+  width: 420px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.portfolio-person {
+  position: absolute;
+  top: 20px;
+  right: 60px;
+  width: 220px;
+  opacity: 0.5;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.portfolio-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 32px;
+  position: relative;
+  z-index: 1;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+.portfolio-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  gap: 24px;
+}
+
+.portfolio-tag-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.portfolio-mini-logo {
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+}
+
+.portfolio-tag-number {
+  color: #8a8aa8;
+  font-size: 13px;
+  font-weight: 600;
+  margin-left: 150px;
+}
+
+.portfolio-tag-label {
+  color: #5B61FF;
+  font-size: 13px;
+  font-weight: 600;
+  margin-left: 50px;
+}
+
+.portfolio-title {
+  font-size: 48px;
+  font-weight: 800;
+  color: #15152e;
+  letter-spacing: -1px;
+  margin-bottom: 12px;
+  margin-left: 170px;
+}
+
+.portfolio-desc {
+  font-size: 14px;
+  color: #6b6b8a;
+  line-height: 22px;
+  max-width: 420px;
+  margin-left: 170px;
+}
+
+.portfolio-contact-btn {
+  background: #5B61FF;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 26px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  flex-shrink: 0;
+  margin-top: 8px;
+  transition: background 0.3s;
+}
+
+.portfolio-contact-btn:hover {
+  background: #4348dd;
+}
+
+/* ===========================
+   FEATURED CARD WRAP
+=========================== */
+
+.portfolio-featured-wrap {
+  margin-bottom: 90px;
+}
+
+/* ===========================
+   BENTO STAGGERED GRID
+=========================== */
+
+.portfolio-bento-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 60px;
+  row-gap: 0;
+  position: relative;
+  
+}
+
+.portfolio-bento-item {
+  grid-column: span 1;
+}
+
+.bento-pos-1 {
+  grid-column: 1;
+  grid-row: 1;
+  margin-top: 0;
+}
+
+.bento-pos-2 {
+  grid-column: 2;
+  grid-row: 1;
+  margin-top: -120px;
+}
+
+.bento-pos-3 {
+  grid-column: 1;
+  max-width: 320px; 
+  grid-row: 2;
+  margin-top: 250px;
+  margin-left: 130px;
+}
+
+.bento-pos-4 {
+  grid-column: 2;
+  grid-row: 2;
+  margin-top: 20px;
+}
+
+/* ===========================
+   TABLET ≤ 1024px
+=========================== */
+
+@media (max-width: 1024px) {
+
+  .portfolio-title {
+    font-size: 32px;
+  }
+
+  .portfolio-person {
+    width: 160px;
+  }
+
+  .bento-pos-2 {
+    margin-top: -60px;
+  }
+
+  .bento-pos-3 {
+    margin-top: 80px;
+  }
+
+}
+
+/* ===========================
+   MOBILE ≤ 768px
+=========================== */
+
+@media (max-width: 768px) {
+
+  .portfolio {
+    padding: 60px 0 80px;
+  }
+
+  .portfolio-mini-logo{
+    display: none;
+  }
+  .portfolio-header-text {
+    padding-left: 0;
+    margin-left: -10px;
+    text-align: left;
+  }
+  .portfolio-tag-number{
+    margin-left: 10px;
+    color:#5B61FF;
+  }
+
+  .portfolio-tag-row {
+    padding-left: 0;
+    margin-left: -10;
+    justify-content: flex-start;
+  }
+
+  .portfolio-title {
+    padding-left: 0;
+    font-size: 38px;
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .portfolio-desc {
+    padding-left: 0;
+    margin-left: 0;
+    text-align: left;
+    max-width: 100%;
+  }
+  .portfolio-person {
+    display: none;
+  }
+
+ .portfolio-featured-wrap,
+  .portfolio-bento-item {
+    width: 100%;
+  }
+
+  .portfolio-card-img {
+    width: 100%;
+    height: 520px;          /* 👈 fixed height — adjust this value to taste */
+    object-fit: cover;       /* 👈 crops the image to fill that height without distorting */
+    border-radius: 20px;
+    right: -20px;
+  }
+
+  .portfolio-bento-grid {
+    grid-template-columns: 1fr;
+    row-gap: 32px;
+  }
+
+  .bento-pos-1,
+  .bento-pos-2,
+  .bento-pos-3,
+  .bento-pos-4 {
+    grid-column: 1;
+    margin-top: 0 !important;
+  }
+
+  .portfolio-contact-btn {
+    position: relative;
+    bottom: -3080px;
+    left: -260px;
+    width: 100%;
+    border-radius: 0;
+    height: 56px;
+    margin: 0;
+    z-index: 100;
+  }
+
+
+  .bento-pos-1 { grid-row: 1; }
+  .bento-pos-2 { grid-row: 2; }
+  .bento-pos-3 { grid-row: 3; }
+  .bento-pos-4 { grid-row: 4; }
+
+
+
+}

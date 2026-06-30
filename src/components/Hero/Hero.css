@@ -1,0 +1,344 @@
+/* ===========================
+   HERO SECTION
+=========================== */
+
+.hero {
+  width: 100%;
+  padding: 80px 0 0;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  margin-bottom: 0;
+  overflow: hidden;
+  max-width: 100vw;
+}
+
+.hero-container {
+  max-width: 1280px;        /* 👈 add this — matches your navbar's contained width */
+  margin: 0 auto;            /* 👈 add this — centers it on the page */
+  padding: 0 32px;           /* 👈 add this — matches your navbar's side padding */
+  display: grid;
+  grid-template-columns: 520px 1fr;
+  align-items: center;
+  gap: 60px;
+  min-height: 700px;
+}
+
+/* ===========================
+   LEFT CONTENT
+=========================== */
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding-bottom: 80px;
+}
+
+.hero-title {
+  font-size: 78px;
+  line-height: 90px;
+  font-weight: 800;
+  letter-spacing: -2px;
+  color: #1a1a3e;
+}
+
+.hero-description {
+  max-width: 380px;
+  font-size: 17px;
+  line-height: 30px;
+  color: #6D718A;
+  margin-top: 28px;
+}
+
+.hero-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 36px;
+  height: 58px;
+  margin-top: 44px;
+  border: none;
+  border-radius: 14px;
+  background: #5B61FF;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.hero-btn:hover {
+  background: #4348dd;
+}
+
+/* ===========================
+   SVG LINE
+=========================== */
+
+.hero-line {
+  position: absolute;
+  left: 360px;
+  top: -240px;
+  width: 460px;
+  height: 880px;
+  z-index: -1;
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+/* ===========================
+   DECORATIVE CIRCLES
+=========================== */
+
+/* .hero-decoration {
+  position: absolute;
+  left: -20px;
+  top: 20px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  border: 1.5px solid #d4d8f3;
+  display: block;
+}
+
+.circle-1 {
+  width: 80px;
+  height: 80px;
+  left: 60px;
+  top: 60px;
+}
+
+.circle-2 {
+  width: 150px;
+  height: 150px;
+  left: 20px;
+  top: 20px;
+}
+
+.circle-3 {
+  width: 240px;
+  height: 240px;
+  left: -20px;
+  top: -20px;
+} */
+
+/* ===========================
+   RIGHT — IMAGE WRAPPER
+=========================== */
+
+.hero-image-wrapper {
+  position: relative;
+  height: 700px;
+  display: flex;
+  align-items: flex-end;
+  /* bleed to the right edge */
+  margin-right: -60px;
+  
+}
+
+/* The actual purple SVG shape */
+.purple-bg {
+  position: absolute;
+  bottom: -30%;
+  top:-10%;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+/* 3D hero illustration sits on top of the purple shape */
+.hero-image {
+  position: absolute;
+  width: 105%;
+  bottom: 10%;
+  left: 30%;
+  transform: translateX(-50%);
+  z-index: 1;
+  display: block;
+}
+
+
+/* ===========================
+   SCROLL INDICATOR
+=========================== */
+
+.scroll-indicator {
+  margin-top: 72px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.scroll-dot {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background: #B783F0;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.scroll-indicator span {
+  color: #888;
+  font-size: 14px;
+}
+
+/* ===========================
+   TABLET ≤ 1024px
+=========================== */
+
+@media (max-width: 1024px) {
+
+  .hero {
+    padding: 50px 0 0;
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr;
+    text-align: left;
+    min-height: auto;
+    gap: 24px;
+    padding: 0 24px;
+  }
+
+  .hero-content {
+    padding-bottom: 0;
+  }
+
+  .hero-title {
+    font-size: 56px;
+    line-height: 64px;
+  }
+
+  .hero-description {
+    margin: 20px 0 0;
+    max-width: 100%;
+  }
+
+  .hero-btn {
+    margin: 28px 0 0;
+    width: fit-content;
+  }
+
+  .scroll-indicator {
+    justify-content: flex-start;
+  }
+
+  .hero-image-wrapper {
+    height: 380px;
+    margin-right: 0;
+    justify-content: flex-end;
+  }
+
+  .hero-image {
+    width: 75%;
+  }
+
+  .hero-line {
+    display: none;
+  }
+
+  .hero-decoration {
+    left: 12px;
+    top: 60px;
+  }
+
+}
+
+/* ===========================
+   MOBILE ≤ 768px
+=========================== */
+
+@media (max-width: 768px) {
+
+  .hero {
+    padding: 30px 20px 0;
+  }
+
+  .hero-container {
+    display: block;          /* 👈 override the grid entirely on mobile to avoid column-width conflicts */
+    text-align: left;
+    padding: 0 24px;          /* 👈 the side margin you're asking for */
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  .hero-title {
+    font-size: 38px;
+    line-height: 46px;
+  }
+
+  .hero-description {
+    font-size: 14px;
+    line-height: 32px;
+    margin: 16px 0 0;
+    max-width: 100%;
+    
+  }
+
+  .hero-btn {
+    margin: 24px 0 0;
+    width: fit-content;
+    max-width: none;
+    bottom: 10%;
+    height: 50px;
+    padding: 0 28px;
+    font-size: 14px;
+  }
+
+  .hero-line {
+  display: block;        /* 👈 re-enable it, overriding the tablet's display: none */
+  position: absolute;
+  left: 140px;
+  top: -80px;
+  width: 290px;
+  height: 400px;
+  opacity: 1;
+  z-index: -1;
+}
+
+  .scroll-indicator {
+    display: none; 
+    /* justify-content: flex-start;
+    margin-top: 28px; */
+  }
+
+  .hero-image-wrapper {
+    position: relative;
+    height: 280px;
+    width: 120%;
+    margin: 24px 0 0;
+    margin-left: 50px;
+    overflow: visible;          /* 👈 clips anything spilling past this wrapper */
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .purple-bg {
+    width: 80%;                /* 👈 was 100% — way too wide, this is what's overflowing */
+    right: 20%;
+    left: 20%;
+  }
+
+  .hero-image {
+    width: 80%;                /* 👈 was 70%, sized down to fit the smaller wrapper */
+    left: 50%;
+    bottom: 40px;
+  }
+
+  .hero-decoration {
+    display: none;
+  }
+
+}

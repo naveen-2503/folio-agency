@@ -1,0 +1,46 @@
+:root{
+
+  /* ========= COLORS ========= */
+
+  --primary:#5B5CF6;
+  --primary-dark:#242347;
+
+  --secondary:#B78EF8;
+
+  --orange:#FDBB74;
+
+  --pink:#F8A8D8;
+
+  --white:#FFFFFF;
+
+  --black:#121212;
+
+  --text:#6D6D6D;
+
+  --border:#ECECEC;
+
+  --background:#F8F8FC;
+
+  /* ========= BORDER RADIUS ========= */
+
+  --radius-sm:10px;
+  --radius-md:18px;
+  --radius-lg:28px;
+  --radius-xl:40px;
+
+  /* ========= SHADOW ========= */
+
+  --shadow-sm:
+      0 5px 20px rgba(0,0,0,.05);
+
+  --shadow-md:
+      0 15px 40px rgba(0,0,0,.08);
+
+  --shadow-lg:
+      0 30px 60px rgba(0,0,0,.12);
+
+  /* ========= CONTAINER ========= */
+
+  --container:1280px;
+
+}

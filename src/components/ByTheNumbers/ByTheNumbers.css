@@ -1,0 +1,429 @@
+/* ===========================
+   BY THE NUMBERS SECTION
+=========================== */
+
+.btn-section {
+  background: #15152e;
+  padding: 60px 0 60px;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate; 
+}
+
+.btn-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 32px;
+  position: relative;
+  z-index: 1;
+}
+
+/* ===========================
+   EYEBROW + TITLE
+=========================== */
+
+.btn-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  margin-left: 180px;
+  margin-top: -50px;
+}
+
+.btn-number,
+.btn-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.btn-title {
+  font-size: 46px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 56px;
+  margin-left: 180px;
+}
+
+/* ===========================
+   STATS ROW
+=========================== */
+
+.btn-stats-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 76px;
+  margin-left: 180px;
+ 
+}
+
+.btn-stat-col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+   margin-bottom: 76px;
+}
+
+.btn-stat-value {
+  font-size: 104px;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1;
+  margin-bottom: 50px;
+}
+
+.btn-plus {
+  font-size: 32px;
+  vertical-align: top;
+}
+
+.btn-stat-label {
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-top: -10px; 
+}
+
+.btn-stat-col:first-child {
+  margin-top: 120px; 
+}
+
+.btn-divider {
+  border: none;
+  border-top: 1px solid #2e2e4d;
+  margin: 8px 0;
+}
+
+.btn-stat-desc {
+  font-size: 18px;
+  color: #8a8aa8;
+  line-height: 1.7;
+  max-width: 320px;
+}
+
+.btn-download {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  width: fit-content;
+  margin-top: 20px;
+ 
+}
+
+.btn-download-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #5B61FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+/* ===========================
+   LOGO
+=========================== */
+
+.btn-logo {
+  width: 26px;
+  height: 26px;
+  margin-bottom: 32px;
+  display: inline-flex;
+}
+
+/* ===========================
+   PROGRESS NAV (replace old rules)
+=========================== */
+
+.btn-progress-nav {
+  margin-bottom: 60px;
+}
+
+.btn-progress-track {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  width: 900px;
+  margin-left: 160px;
+  margin-top: -60px;
+}
+
+.btn-progress-track::before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #2e2e4d;
+  z-index: 0;
+}
+
+.btn-progress-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+  z-index: 1;
+}
+
+.btn-progress-item:first-child {
+  align-items: flex-start;
+
+}
+
+.btn-progress-item:last-child {
+  align-items: flex-end;
+}
+
+.btn-progress-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #2e2e4d;
+  flex-shrink: 0;
+}
+
+.btn-progress-dot.active {
+  background: #5B61FF;
+  width: 10px;
+  height: 10px;
+}
+
+.btn-progress-label {
+  font-size: 12px;
+  color: #6b6b8a;
+}
+
+.btn-progress-label.active {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* ===========================
+   ILLUSTRATION CARD
+=========================== */
+
+.btn-illustration-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding-bottom: 0;
+}
+
+/* .btn-nav-arrow {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background: #5B61FF;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background 0.3s;
+  z-index: 2;
+}
+
+.btn-nav-arrow:hover {
+  background: #4348dd;
+} */
+
+/* .btn-illustration-card {
+  width: 100%;
+  max-width: 420px;
+  aspect-ratio: 1.1;
+  border-radius: 32px 32px 0 0;
+  background: linear-gradient(135deg, #f5b06a 0%, #f5b06a 48%, #b89ef5 52%, #b89ef5 100%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+  padding-top: 40px;
+} */
+
+.btn-illustration {
+  width: 75%;
+  display: block;
+  margin-left: 130px;
+}
+
+.btn-mobile-dropdown {
+  display: none;
+}
+
+.btn-dropdown-select {
+  background: #1f1f3d;
+  color: #ffffff;
+  border: 1px solid #33334d;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  width: 100%;
+  appearance: none;
+  -webkit-appearance: none;
+}
+/* ===========================
+   TABLET ≤ 1024px
+=========================== */
+
+@media (max-width: 1024px) {
+
+  .btn-title {
+    font-size: 28px;
+  }
+
+  .btn-stats-row {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .btn-stat-value {
+    font-size: 48px;
+  }
+
+}
+
+/* ===========================
+   MOBILE ≤ 768px
+=========================== */
+
+@media (max-width: 768px) {
+
+  .btn-inner {
+    text-align: left;
+  }
+
+  .btn-eyebrow {
+    display: block;
+    margin-top: 30px;
+  }
+
+  .btn-eyebrow,
+  .btn-title,
+  .btn-stat-col,
+  .btn-stat-value,
+  .btn-stat-label,
+  .btn-stat-desc,
+  .btn-download {
+    text-align: left;
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .btn-section {
+    padding: 32px 0 0;
+  }
+
+
+  .btn-logo {
+    display: none;
+  }
+
+  .btn-title {
+    font-size: 48px;
+    margin-bottom: 32px;
+  }
+
+  .btn-progress-nav {
+    display: none;
+  }
+
+  /* show the dropdown instead */
+  .btn-mobile-dropdown {
+    display: block;
+    margin-bottom: 54px;
+    margin-top: -120px;
+  }
+
+  /* reorder: illustration wrapper comes before dropdown visually */
+  .btn-illustration-wrapper {
+    order: 2;
+    margin-bottom: 24px;
+  }
+
+  .btn-mobile-dropdown {
+    order: 1;
+    top: 40px;
+  }
+
+  /* make the parent a flex column so order works */
+  .btn-inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn-nav-arrow {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+  }
+
+  .btn-illustration-card {
+    max-width: 280px;
+  }
+
+  .btn-stats-row {
+    margin-left: 0;
+    grid-template-columns: 1fr;   /* ← single column */
+    gap: 32px;
+  }
+
+  .btn-stat-col:first-child {
+    margin-top: -50px;                /* ← remove the desktop offset */
+    order: 2;                     /* ← "20" block goes second */
+  }
+
+  .btn-stat-col:last-child {
+    order: 1;                     /* ← "40+" block goes first */
+  }
+
+  .btn-stat-value {
+    font-size: 48px;
+    margin-bottom: 12px;
+  }
+ 
+
+  .btn-progress-track {
+    margin-left: 0;    /* ← ADD THIS too, it has margin-left: 160px */
+    width: 100%;       /* ← override the fixed width: 900px */
+  }
+  .btn-progress-labels span:not(.active) {
+    display: none;
+  }
+
+  .btn-progress-nav {
+    margin-bottom: 32px;
+  }
+
+  .btn-illustration-wrapper {
+    gap: 12px;
+  }
+
+  .btn-illustration {
+    margin-left: 0;
+    width: 900px;    /* ← ADD THIS, it has margin-left: 130px */
+  }
+
+
+  .btn-nav-arrow {
+    width: 36px;
+    height: 36px;
+  }
+
+}

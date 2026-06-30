@@ -1,0 +1,213 @@
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar {
+  height: 96px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #F1F2F6;
+  background: #fff;
+  position: fixed;       /* 👈 changed from sticky */
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.navbar-wrapper {
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+}
+
+/* ===========================
+   LOGO
+=========================== */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  display: block;
+  border-radius: 10px;
+}
+
+.logo-text {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a3e;
+  letter-spacing: -0.5px;
+}
+
+.logo-dot {
+  color: #5B61FF;
+}
+
+/* ===========================
+   DESKTOP MENU
+=========================== */
+
+.desktop-menu {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.nav-link {
+  position: relative;
+  font-size: 15px;
+  font-weight: 500;
+  color: #252641;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #5B61FF;
+}
+
+/* ===========================
+   JOBS BADGE
+=========================== */
+
+.nav-badge {
+  position: absolute;
+  top: -10px;
+  right: -18px;
+  background: #5B61FF;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+/* ===========================
+   CONTACT BUTTON
+=========================== */
+
+.contact-btn {
+  background: #252641;
+  color: #fff;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 14px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+  white-space: nowrap;
+}
+
+.contact-btn:hover {
+  background: #5B61FF;
+}
+
+/* ===========================
+   HAMBURGER (mobile only)
+=========================== */
+
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 32px;
+  color: #252641;
+  cursor: pointer;
+  line-height: 1;
+}
+
+/* ===========================
+   MOBILE MENU
+=========================== */
+
+.mobile-menu {
+  display: none;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 991px) {
+
+  .navbar {
+    height: 72px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .navbar-wrapper {
+    height: 72px;
+    padding: 0 16px 0 15px;
+  }
+
+
+  .desktop-menu {
+    display: none;
+  }
+
+  .contact-btn:not(.mobile-btn) {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 28px 24px 32px;
+    background: #fff;
+    border-top: 1px solid #F1F2F6;
+  }
+
+  .mobile-nav-link {
+    font-size: 16px;
+    font-weight: 500;
+    color: #252641;
+    text-decoration: none;
+    position: relative;
+    width: fit-content;
+  }
+
+  .mobile-nav-link .nav-badge {
+    top: -8px;
+    right: -22px;
+  }
+
+  .mobile-btn {
+    display: block;
+    width: fit-content;
+    margin-top: 8px;
+  }
+
+}
+
+/* @media (max-width: 480px) {
+
+  .logo img {
+    width: 90px;
+  }
+
+} */

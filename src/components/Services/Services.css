@@ -1,0 +1,230 @@
+.services {
+  background: #f3f0fa;
+  padding: 60px 0 60px;
+  position: relative;
+  overflow: hidden;
+  max-width: 100vw;
+}
+
+.services-row1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto 24px;
+  padding: 0 32px;
+  position: relative;
+  z-index: 1;
+}
+
+.services-logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 7px;
+  display: block;
+  flex-shrink: 0;
+}
+
+
+.services-tag-center {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.services-tag-number {
+  color: #7676f1;
+  font-size: 13px;
+  font-weight: 600;
+  margin-left: -210px
+}
+
+.services-tag-label {
+  color: #7676f1;
+  font-size: 13px;
+  font-weight: 500;
+  
+}
+
+.services-arrows {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.arrow-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, color 0.3s;
+}
+
+.arrow-prev {
+  background:ece9f7 ;
+  color: white;
+  border: 1px solid #e0deee;
+  margin-left: 200px;
+  top: -20px;
+}
+
+.arrow-prev:hover {
+  background: #717075;
+  color: white;
+}
+
+.arrow-next {
+  background: transparent;
+  color: white;
+}
+
+.arrow-next:hover {
+  background: #4348dd;
+}
+
+.services-title {
+  max-width: 1280px;
+  margin: 0 auto 50px;
+  padding: 0 32px;
+  font-size: 48px;
+  line-height: 46px;
+  font-weight: 800;
+  color: #15152e;
+  letter-spacing: -0.5px;
+  position: relative;
+  z-index: 1;
+  margin-left: 300px
+}
+
+.services-line {
+  position: absolute;
+  top: 0;
+  left: 140px;
+  width: 420px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.services-cards {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 30px 30px;
+  display: flex;
+  flex-direction: row;      /* 👈 make sure this isn't accidentally "column" */
+  align-items: flex-end;
+  gap: -15px;
+  position: relative;
+  z-index: 1;
+}
+
+/* ===========================
+   TABLET ≤ 1024px
+=========================== */
+
+@media (max-width: 1024px) {
+
+  .services-title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+}
+
+/* ===========================
+   MOBILE ≤ 768px
+=========================== */
+
+@media (max-width: 768px) {
+
+  .services {
+    padding: 50px 0 50px;
+  }
+
+  .services-tag-center,
+  .services-tag-number,
+  .services-tag-label {
+    margin-left: 0;
+    margin-right: 30px;
+    position: static;
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+    margin-bottom: 10px;
+  }
+
+  .services-row1 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+
+  .services-title {
+    font-size: 48px;
+    line-height: 39px;
+    margin-left: 10px;
+    margin-top: -30px;
+  }
+
+  .services-arrows {
+    position: absolute;
+    top: 0;           /* 👈 pushes it just below row1's own height */
+    left: -95px;
+    margin-top: 300px;
+  }  
+
+  .services-line {
+    display: none;
+  }
+
+  .services-logo {
+    display: none;
+  }
+
+  .services-cards {
+    flex-direction: column;     /* 👈 stack cards vertically instead of side-by-side */
+    gap: 16px;
+    border-radius: 0;
+     margin-top: 130px;
+  }
+
+  .service-card {
+    flex-direction: row;         /* 👈 icon and label side-by-side, not stacked */
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 26px 28px;
+    width: 100%;
+    border-radius: 16px !important;
+  }
+
+  .service-card:first-child,
+  .service-card:last-child {
+    border-radius: 16px;          /* override the desktop's asymmetric corner rounding */
+  }
+
+  .service-card-active {
+    margin: 0;                    /* remove desktop's negative-margin "pop up" effect */
+    padding: 24px 28px;
+  }
+
+  .service-icon-circle {
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+  }
+
+  .service-card-label {
+    font-size: 16px;
+    text-align: left;
+  }
+
+
+
+} 
